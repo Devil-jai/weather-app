@@ -9,9 +9,6 @@ function City() {
     const [city, setCity] = useState("")
     const [weather, setWeather] = useState("")
 
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-
     const getWeatherCity = async () => {
         const weatherData = await getWeather(city);
         setWeather(weatherData);
