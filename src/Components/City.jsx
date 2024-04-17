@@ -8,8 +8,7 @@ function City() {
 
     const [city, setCity] = useState("")
     const [weather, setWeather] = useState("")
-    // const [sunrise_hours,setsunrise_hour] = useState()
-    // const [sunrise_mins,setsunrise_min] = useState()
+
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
@@ -18,24 +17,6 @@ function City() {
         setWeather(weatherData);
         setCity("");
     }
-    // const date = new Date()
-    // // console.log(date)
-    // const hours = date.getHours()
-    // const am = hours >= 12 ? 'PM' : 'AM';
-
-    // if(weather.weather && weather){
-    //     const unix = weather.sys.sunrise;
-    // let date_sunrise = new Date(unix*1000)
-    // console.log(date_sunrise)
-    // let sunrise_hour = date_sunrise.getHours();
-    // setsunrise_hour(sunrise_hour)
-    // let sunrise_min  = date_sunrise.getMinutes();
-    // setsunrise_min(sunrise_min)
-    // }
-    // else{
-    //     console.log(" ")
-    // }
-
     return (
         <>
 
